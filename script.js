@@ -74,11 +74,22 @@ function backSpace(num){
         input.value = space;
     }
 }
+var i = 0;
+function brackets(){
+    var input = document.getElementById('input');
+    if(i == 0) {
+        input.value += '(';
+        i = 1;
+    }else if(i == 1) {
+        input.value += ')';
+        i = 0;
+    }
+}
 
 // equal button
 function equal(num){
     var input = document.getElementById('input');
     var answer = Math.floor('='); 
     document.getElementById('answer').value = '=' + answer;
-    console.log(equal)
+    console.log(equal);
 }
