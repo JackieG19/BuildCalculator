@@ -89,7 +89,7 @@ function brackets(){
 // equal button
 function equal(num){
     var input = document.getElementById('input');
-    var answer = Math.floor('='); 
+    var answer = Math.floor(eval(input.value)); 
     document.getElementById('answer').value = '=' + answer;
     console.log(equal);
 }
