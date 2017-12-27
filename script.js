@@ -1,4 +1,4 @@
-function numbers(num){
+function numbers(num){ //numbers are clickable
     var input = document.getElementById('input');
     switch (num) {
         case 1:
@@ -28,6 +28,15 @@ function numbers(num){
         case 9:
             input.value += '9';
             break;
+        case 0:
+            input.value += '0';
+            break;
        
     }
+}
+
+// clear screen
+function clearScreen() {
+    document.getElementById('input').value = "",
+    document.getElementById('answer').value = "";
 }

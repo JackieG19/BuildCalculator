@@ -1,3 +1,6 @@
+body{
+    background-color:grey
+}
 table {
     width: 310px;
     margin: 50px auto;
@@ -5,6 +8,7 @@ table {
     border: none;
     border-radius: 10px;
     padding: 0px 20px 20px;
+    box-shadow: 5px 5px 5px 8px black;
 }
 
 .heading {
@@ -41,6 +45,7 @@ input[type=button] {
     margin:1px;
     border-radius:8px;
     border:none;
+    box-shadow: 4px 4px 4px grey;
 }
 
 input[type=button]:hover {
